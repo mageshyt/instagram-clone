@@ -10,7 +10,19 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+
   pages: {
-    signIn: "/api/auth/signin",
+    signIn: "/auth/signin",
+  },
+  callbacks: {
+    async session({ token, session, user }) {
+      // Save the user name in lower case
+      session.user.username = session.user.name
+        .split(" ")
+        .join("")
+        .toLowerCase();
+      session.user.uid = token.sub; // token contain additional information
+      return session;
+    },
   },
 });
