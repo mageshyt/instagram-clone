@@ -15,20 +15,22 @@ const Posts = () => {
       }
     );
   }, [db]);
-
   return (
     <div>
-      {posts.map((post) => (
-        <Post
-          reference={post}
-          key={post.id}
-          id={post.id}
-          username={post.data().username}
-          userImg={post.data().profileImg}
-          img={post.data().image}
-          caption={post.data().caption}
-        />
-      ))}
+      {posts.map((post) => {
+        console.log("post detail", post.data());
+        return (
+          <Post
+            reference={post}
+            key={post.id}
+            id={post.id}
+            username={post.data().userName}
+            userImg={post.data().profileImg}
+            img={post.data().image}
+            caption={post.data().caption}
+          />
+        );
+      })}
     </div>
   );
 };

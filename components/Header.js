@@ -67,7 +67,7 @@ const Header = () => {
         {/* Buttons */}
         <div className="center space-x-4 ">
           <HomeIcon onClick={() => router.push("/")} className="navBtn" />
-          <MenuIcon className="h-6 md:hidden cursor-pointer" />
+          {/* <MenuIcon className=" md:hidden cursor-pointer" /> */}
 
           {session ? (
             <>
@@ -79,7 +79,7 @@ const Header = () => {
               </div>
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="navBtn"
+                className="md:h-6 h-16"
               />
               <HeartIcon className="navBtn" />
 

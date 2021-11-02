@@ -12,6 +12,7 @@
     "faker": "^5.5.3",
     "firebase": "^9.2.0",
     "framer-motion": "^5.0.0",
+    "moment": "^2.29.1",
     "next": "latest",
     "next-auth": "^4.0.0-beta.6",
     "react": "^17.0.2",
