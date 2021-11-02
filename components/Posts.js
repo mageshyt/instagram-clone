@@ -15,10 +15,12 @@ const Posts = () => {
       }
     );
   }, [db]);
+
   return (
     <div>
       {posts.map((post) => (
         <Post
+          reference={post}
           key={post.id}
           id={post.id}
           username={post.data().username}
