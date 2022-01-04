@@ -14,6 +14,7 @@ const Stories = () => {
     setSuggestions(suggestion);
   }, []);
   // session
+  console.log(suggestions);
   const { data: session } = useSession();
   return (
     <div
@@ -24,18 +25,19 @@ const Stories = () => {
         <Story img={session?.user.image} username={session.user.name} />
       )}
       {suggestions.map(({ id, avatar, username }) => (
-        <Story key={id} img={avatar} username={username} />
+        <Story key={id} id={id} img={avatar} username={username} />
       ))}
     </div>
   );
 };
 
-const Story = ({ img, username }) => {
+const Story = ({ img, username, id }) => {
+  console.log(img);
   return (
     <div>
       <img
         className="h-14 w-14 rounded-full p-[1.5px] border-red-500 border-2 object-contain cursor-pointer hover:scale-110 transition transform duration-200 ease-out"
-        src={img}
+        src={`https://i.pravatar.cc/150?img=${id}`}
         alt={username}
       />
       <p className="text-xs w-14 truncate text-center">

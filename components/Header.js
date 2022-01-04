@@ -22,7 +22,6 @@ const Header = () => {
 
   // ! state management
   const [open, setOpen] = useRecoilState(modalState);
-  console.log("state", modalState);
   return (
     <div className="shadow-sm border-b  bg-white sticky top-0 z-50">
       <div className=" flex items-center justify-between max-w-6xl mx-5 xl:mx-auto ">
@@ -79,7 +78,7 @@ const Header = () => {
               </div>
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="md:h-6 h-16"
+                className="md:h-6 h-14"
               />
               <HeartIcon className="navBtn" />
 
