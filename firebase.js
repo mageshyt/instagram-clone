@@ -5,12 +5,13 @@ import { getStorage } from "firebase/storage";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import React from "react";
 const firebaseConfig = {
-  apiKey: "AIzaSyBAJ3y-_9RO5mPtd3U7fCgsqywWvewUwP0",
-  authDomain: "instagram-clone-cee33.firebaseapp.com",
-  projectId: "instagram-clone-cee33",
-  storageBucket: "instagram-clone-cee33.appspot.com",
-  messagingSenderId: "213870820410",
-  appId: "1:213870820410:web:6d063ceb31d2a010840903",
+  apiKey: "AIzaSyCDXgyJn7RVNlYVsCj-fH6NLLp37w1bzQ0",
+  authDomain: "insta-44ef9.firebaseapp.com",
+  projectId: "insta-44ef9",
+  storageBucket: "insta-44ef9.appspot.com",
+  messagingSenderId: "515090443069",
+  appId: "1:515090443069:web:e59e9cbaae245c96277354",
+  measurementId: "G-2K92TV6DCZ",
 };
 
 // Initialize Firebase
