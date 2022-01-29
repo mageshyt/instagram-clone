@@ -15,13 +15,14 @@ export default NextAuth({
     signIn: "/auth/signin",
   },
   callbacks: {
-    async session({ token, session, user }) {
-      // Save the user name in lower case
+    async session({ session, token, user }) {
       session.user.username = session.user.name
         .split(" ")
         .join("")
         .toLowerCase();
-      session.user.uid = token.sub; // token contain additional information
+
+      session.user.uid = token.sub;
+
       return session;
     },
   },

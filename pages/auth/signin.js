@@ -1,7 +1,13 @@
 import React from "react";
 import { getProviders, signIn as SignIntoProvider } from "next-auth/react";
 import Header from "../../components/Header";
+import { signInWithGoogle, useAuth } from "../../firebase";
+import { useRouter } from "next/dist/client/router";
+
 const SignIn = ({ providers }) => {
+  const currentUser = useAuth();
+  const router = useRouter();
+  console.log("user -->", providers);
   return (
     <div className="">
       <Header />
