@@ -21,7 +21,7 @@ const Suggestions = () => {
       {suggestions.map(({ id, avatar, username, company }) => (
         <div key={id} className="flex justify-between mt-2 items-center">
           <img
-            src={avatar}
+            src={`https://i.pravatar.cc/150?img=${id}`}
             alt="avatar"
             className="rounded-full cursor-pointer border border-2 border-purple-700 p-[2.6px] w-12 h-12"
           />

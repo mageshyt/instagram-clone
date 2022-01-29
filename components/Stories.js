@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import faker from "faker";
 import { useSession } from "next-auth/react";
 const Stories = () => {
-  // save out faker data using usestate
+  // save out faker data using usestate 
   const [suggestions, setSuggestions] = React.useState([]);
   useEffect(() => {
     const suggestion = [...Array(20)].map((_, i) => {
@@ -25,14 +25,14 @@ const Stories = () => {
         <Story img={session?.user.image} username={session.user.name} />
       )}
       {suggestions.map(({ id, avatar, username }) => (
-        <Story key={id} id={id} img={avatar} username={username} />
+        <Story key={id} id={id} username={username} />
       ))}
     </div>
   );
 };
 
-const Story = ({ img, username, id }) => {
-  console.log(img);
+const Story = ({ username, id }) => {
+  // console.log(img);
   return (
     <div>
       <img
