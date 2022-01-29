@@ -463,10 +463,10 @@
   "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.2.1.tgz"
   "version" "9.2.1"
 
-"@headlessui/react@^1.4.1":
-  "integrity" "sha512-gL6Ns5xQM57cZBzX6IVv6L7nsam8rDEpRhs5fg28SN64ikfmuuMgunc+Rw5C1cMScnvFM+cz32ueVrlSFEVlSg=="
-  "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.4.1.tgz"
-  "version" "1.4.1"
+"@headlessui/react@^1.4.3":
+  "integrity" "sha512-n2IQkaaw0aAAlQS5MEXsM4uRK+w18CrM72EqnGRl/UBOQeQajad8oiKXR9Nk15jOzTFQjpxzrZMf1NxHidFBiw=="
+  "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.4.3.tgz"
+  "version" "1.4.3"
 
 "@heroicons/react@^1.0.5":
   "integrity" "sha512-UDMyLM2KavIu2vlWfMspapw9yii7aoLwzI2Hudx4fyoPwfKfxU8r3cL8dEBXOjcLG0/oOONZzbT14M1HoNtEcg=="
