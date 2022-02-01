@@ -2,7 +2,7 @@ import React from "react";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atoms/modalAtom";
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment } from "@headlessui/react";
+import { Fragment } from "react";
 import { CameraIcon } from "@heroicons/react/outline";
 import {
   addDoc,
